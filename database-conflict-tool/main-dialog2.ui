@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DockWidget</class>
+ <widget class="QDockWidget" name="DockWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>665</width>
+    <height>217</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Conflict Search</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Search Object:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Polygon</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/Icons8-Ios7-Maps-Polygon.ico</normaloff>icons/Icons8-Ios7-Maps-Polygon.ico</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Linestring</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/Icons8-Ios7-Maps-Polyline.ico</normaloff>icons/Icons8-Ios7-Maps-Polyline.ico</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>Point</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/Icons8-Ios7-Maps-Geo-Fence.ico</normaloff>icons/Icons8-Ios7-Maps-Geo-Fence.ico</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="text">
+         <string>Map Selection</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/Icons8-Ios7-Maps-Quest.ico</normaloff>icons/Icons8-Ios7-Maps-Quest.ico</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5" colspan="2">
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="text">
+         <string>Previous search object</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/Icons8-Ios7-Maps-Layers.ico</normaloff>icons/Icons8-Ios7-Maps-Layers.ico</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="7" colspan="2">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>78</width>
+          <height>17</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Profile:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="4">
+       <widget class="QComboBox" name="comboBox"/>
+      </item>
+      <item row="1" column="5">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Buffer (m.)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="6">
+       <widget class="QgsDoubleSpinBox" name="mQgsDoubleSpinBox">
+        <property name="prefix">
+         <string/>
+        </property>
+        <property name="suffix">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="7">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>13</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="8">
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="text">
+         <string>Find </string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Conflict results</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QTableWidget" name="tableWidget">
+          <column>
+           <property name="text">
+            <string>Layername</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>No of overlaps</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Total no of rows</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QPushButton" name="pushButton_11">
+            <property name="text">
+             <string>Map layer</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_10">
+            <property name="text">
+             <string>Layer details</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>13</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Details, layer &quot;x&quot;</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QTableWidget" name="tableWidget_2">
+          <column>
+           <property name="text">
+            <string>Layername</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Identification</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Area Overlap (m²)</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Item overlap (%)</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Object overlap (%)</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QPushButton" name="pushButton_7">
+            <property name="text">
+             <string>Zoom to item </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsDoubleSpinBox</class>
+   <extends>QDoubleSpinBox</extends>
+   <header>qgsdoublespinbox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -6,136 +6,334 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>663</width>
-    <height>582</height>
+    <width>755</width>
+    <height>309</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Conflict Search</string>
   </property>
   <widget class="QWidget" name="dockWidgetContents">
-   <widget class="QGroupBox" name="groupBox">
-    <property name="geometry">
-     <rect>
-      <x>9</x>
-      <y>9</y>
-      <width>646</width>
-      <height>66</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Selection of search object </string>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QPushButton" name="pushButton">
-         <property name="text">
-          <string>Polygon</string>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>icons/Icons8-Ios7-Maps-Polygon.ico</normaloff>icons/Icons8-Ios7-Maps-Polygon.ico</iconset>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="text">
-          <string>Linestring</string>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>icons/Icons8-Ios7-Maps-Polyline.ico</normaloff>icons/Icons8-Ios7-Maps-Polyline.ico</iconset>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_3">
-         <property name="text">
-          <string>Point</string>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>icons/Icons8-Ios7-Maps-Geo-Fence.ico</normaloff>icons/Icons8-Ios7-Maps-Geo-Fence.ico</iconset>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_4">
-         <property name="text">
-          <string>Map Selection</string>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>icons/Icons8-Ios7-Maps-Quest.ico</normaloff>icons/Icons8-Ios7-Maps-Quest.ico</iconset>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_5">
-         <property name="text">
-          <string>Previous selection</string>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>icons/Icons8-Ios7-Maps-Layers.ico</normaloff>icons/Icons8-Ios7-Maps-Layers.ico</iconset>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>288</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>Buffervalue (m.)</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QgsDoubleSpinBox" name="mQgsDoubleSpinBox">
-         <property name="prefix">
-          <string/>
-         </property>
-         <property name="suffix">
-          <string/>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_2">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>80</y>
-      <width>646</width>
-      <height>53</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Selection of Profile</string>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
-     <item>
-      <widget class="QComboBox" name="comboBox"/>
-     </item>
-    </layout>
-   </widget>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Search Object:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Polygon</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/Icons8-Ios7-Maps-Polygon.ico</normaloff>icons/Icons8-Ios7-Maps-Polygon.ico</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Linestring</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/Icons8-Ios7-Maps-Polyline.ico</normaloff>icons/Icons8-Ios7-Maps-Polyline.ico</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>Point</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/Icons8-Ios7-Maps-Geo-Fence.ico</normaloff>icons/Icons8-Ios7-Maps-Geo-Fence.ico</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="text">
+         <string>Map Selection</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/Icons8-Ios7-Maps-Quest.ico</normaloff>icons/Icons8-Ios7-Maps-Quest.ico</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="text">
+         <string>Previous search object</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/Icons8-Ios7-Maps-Layers.ico</normaloff>icons/Icons8-Ios7-Maps-Layers.ico</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>13</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="7">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Buffervalue (m.)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="8">
+       <widget class="QgsDoubleSpinBox" name="mQgsDoubleSpinBox">
+        <property name="prefix">
+         <string/>
+        </property>
+        <property name="suffix">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Profile:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="8">
+       <widget class="QComboBox" name="comboBox"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>323</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="text">
+         <string>Find Conflicts</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>318</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Conflict results</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QTableWidget" name="tableWidget">
+            <property name="minimumSize">
+             <size>
+              <width>711</width>
+              <height>0</height>
+             </size>
+            </property>
+            <column>
+             <property name="text">
+              <string>Layername</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>No of overlaps</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Total no of rows</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <spacer name="horizontalSpacer_8">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>478</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_11">
+              <property name="text">
+               <string>Show layer in map</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_10">
+              <property name="text">
+               <string>Show details for layer</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Details, layer &quot;x&quot;</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QTableWidget" name="tableWidget_2">
+            <column>
+             <property name="text">
+              <string>Layername</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Identification</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Area Overlap (m²)</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Item overlap (%)</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Object overlap (%)</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <spacer name="horizontalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>618</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_9">
+              <property name="text">
+               <string>Zoom to item</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>328</width>
+          <height>17</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="text">
+         <string>Close</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>318</width>
+          <height>17</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
  </widget>
  <customwidgets>
